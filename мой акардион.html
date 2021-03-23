@@ -1,0 +1,97 @@
+<div class="quest-cart">
+ 						<button class="quest-cart-border" data-tab="#tab_1">
+ 							<i class="fa fa-plus-square-o plus"></i>
+ 							<i class="fa fa-minus-square-o plus"></i>
+ 							<h2 class="title-quest" >Сколько стоят ваши услуги?</h2>
+ 						</button>
+ 						<p class="text-quest" id="tab_1">На сайте в разделе «стоимость» вы можете ознакомиться с большей частью предоставляемых нами услуг и их стоимостью. Если вы не нашли нужную информацию, то позвоните нам по тел: 23 45 23 и наш консультант ответит на все ваши вопросы.</p>
+</div>
+<div class="quest-cart">
+ 						<button class="quest-cart-border" data-tab="#tab_2">
+ 							<i class="fa fa-plus-square-o plus"></i>
+ 							<i class="fa fa-minus-square-o plus"></i>
+ 							<h2 class="title-quest" >Сколько стоят ваши услуги?</h2>
+ 						</button>
+ 						<p class="text-quest" id="tab_2">На сайте в разделе «стоимость» вы можете ознакомиться с большей частью предоставляемых нами услуг и их стоимостью. Если вы не нашли нужную информацию, то позвоните нам по тел: 23 45 23 и наш консультант ответит на все ваши вопросы.</p>
+</div>
+<div class="quest-cart">
+ 						<button class="quest-cart-border" data-tab="#tab_3">
+ 							<i class="fa fa-plus-square-o plus"></i>
+ 							<i class="fa fa-minus-square-o plus"></i>
+ 							<h2 class="title-quest" >Сколько стоят ваши услуги?</h2>
+ 						</button>
+ 						<p class="text-quest" id="tab_3">На сайте в разделе «стоимость» вы можете ознакомиться с большей частью предоставляемых нами услуг и их стоимостью. Если вы не нашли нужную информацию, то позвоните нам по тел: 23 45 23 и наш консультант ответит на все ваши вопросы.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+.quest-cart{
+	width:1040px;
+}
+.quest-cart-border{
+	display: flex;
+	padding: 15px;
+	border: 2px solid #e6e6e6;
+	transition: all 0.3s;
+	background: #fff;
+	width: 1040px;
+	align-items: center; 
+	z-index: 5;
+	position: relative;
+}
+.text-quest.active {
+	border-left: 2px solid #e6e6e6;
+	border-right: 2px solid #e6e6e6;
+	padding: 20px 15px 30px 15px;
+	transform: translateY(0);
+	transition: all 0.3s;
+	font-size: 12px;
+	color: #1E1D24;
+	font-weight: 300;
+    line-height: 24px;
+    position: inherit;
+    z-index: 1;
+}
+.text-quest{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	transform: translateY(-100%);
+	transition:all 0.3s;
+}
+.active .fa-plus-square-o{
+	display: none;
+}
+.active .fa-minus-square-o{
+	display: block;
+}
+.active .plus{
+	color: rgba(254,125,20,0.8);
+}
+.active .title-quest{
+	color: rgba(254,125,20,0.8);
+}
+.fa-minus-square-o{
+	display: none;
+}
+.title-quest{
+	font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #1E1D24;
+}
+.plus{
+	font-weight: 400;
+	margin-right: 10px;
+	font-size: 18px;
+}
